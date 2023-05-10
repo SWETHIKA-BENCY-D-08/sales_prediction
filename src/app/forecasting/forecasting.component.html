@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<section>
+    <div class="main">
+    <div class="run">
+        <canvas baseChart class="chart"
+        type="line" 
+        [data]="chatdata">
+        </canvas>
+        <div><div>
+            <h2 style="color: rgb(163, 73, 9);">Accuracy</h2>
+            <pre >{{r2}}</pre>
+        </div>
+        <div>
+            <h2 style="color: rgb(163, 73, 9);">Metrices</h2>
+            <pre >{{Metrics}}</pre>
+            <br>
+            <h4>View the charts in PowerBI</h4>
+            <button class="button" (click)="onChangePower()">Power BI</button>
+        </div>
+    </div>
+    </div>
+</div>
+</section>

@@ -1,0 +1,69 @@
+.dashboard-block{
+  float:left;
+  width:80%;
+  height: 80%;
+  padding : 70px 70px;
+  margin-left: 165px;
+  
+}
+.image-block{
+  float:left;
+  width:100%;
+  height: 100%;
+  padding : 100px 0;
+  
+}
+.center-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.white-text {
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.942);
+  border-radius: 10px;
+  width: 40%;
+  height: 100%;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.497);
+  
+}
+.shaded-box {
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  
+}
+
+.submit-button {
+  margin-top:25px ;
+  border-color:rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.btn-login{background: #b67f7f; color:#e9cccc; font-weight:600; }
+
+.select{
+  width: 90px;
+  height: 35px;
+  border-color: rgb(0, 0, 0);
+  margin-left: 10px;
+  border-width: 2px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.form-group{
+  text-align: center;
+}

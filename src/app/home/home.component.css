@@ -1,0 +1,22 @@
+.image-container {
+    height: 80%;
+    width: 100%;
+    background-image: url('https://www.lifeofpix.com/wp-content/uploads/2018/08/308-name05903-chim.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    padding: 20px;
+    margin-top: 8%;
+    margin-left: 3%;
+    box-sizing: border-box;
+ 
+}
+

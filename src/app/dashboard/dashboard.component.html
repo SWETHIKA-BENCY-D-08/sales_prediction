@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<section class="image-block" style="background-color: rgb(254, 212, 161);">
+  <h2 class="text-center white-text" style="margin-top:-40px; font-weight:bolder; font-size: 45px; font-family:'Times New Roman', Times, serif;">FILE UPLOAD</h2>
+
+<section class ="dashboard-block">
+    <div class="container">
+      <div class="row ">
+          <div class="col login-sec">
+              
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data" style="margin-left: 15px;">
+      <div class="form-group">
+        <br>
+        <label for="csvFile" style="text-align: center; margin-top: 20px; font-weight: 500; font-size: x-larger;">Upload CSV File</label>
+        <img src="https://www.vhv.rs/dpng/d/189-1898171_cloud-file-upload-cloud-file-upload-icon-hd.png" style="margin-left: 5px;" height="27px" width="30px" alt="">
+        <input type="file"  style="margin-left:100px; margin-top:10px;" accept=".csv" class="form-control-file" id="csvFile"  (change)="onFileSelected($event)" #csvFileInput>
+      </div>
+      <br>
+      <div class="form-group">
+        <label style = "font-weight: 500; font-size: large ;" for="periodicity" >Select granularity:</label>
+        <select name="periodicity" id="periodicity" (change)="onPeriodicityChange($event)" class="select centered">
+          <br>
+          <option>--</option>
+          <option value="D">Days</option>
+          <option value="W">Weeks</option>
+          <option value="M">Months</option>
+          <option value="Y">Years</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="periods" style="text-align: center; font-weight: 500; font-size: large; display: inline-block;">Indicate the frequency</label>
+        <input type="number" id="period" class="select centered"  min="0" max="60"   (change)="onPeriodsChange($event)">
+      </div>
+      <br>
+      <div class="shaded-box">
+        <button type="submit" class="submit-button" style="font-weight: 500; font-size: larger; border-radius: 10px; box-shadow: 2px 2px 2px #000000; background-color: rgb(209, 202, 202);">Submit</button>
+      </div>
+
+      
+    </form>
